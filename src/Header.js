@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Header = () => (
-	 <nav>
+const Header = () =>
+  <nav>
     <div className="nav-wrapper black">
-      <a className="brand-logo center"><span className="large-brand">{"{ lnx }"}</span> - we complicate simple things</a>
+      <a className="brand-logo center">
+        <span className="large-brand">{'{ lnx }'}</span> - we complicate simple things
+      </a>
     </div>
-  </nav>
-)
+  </nav>;
 
-export default Header
+export default Header;

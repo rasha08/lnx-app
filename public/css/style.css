@@ -1,5 +1,6 @@
 body{
-	background-image: url(https://wallpaperscraft.com/image/dark_spot_background_texture_50611_1920x1080.jpg)
+	background-image: url(https://wallpaperscraft.com/image/dark_spot_background_texture_50611_1920x1080.jpg);
+	background-size: cover;
 }
 .large-brand{
 	font-size: 62px;
