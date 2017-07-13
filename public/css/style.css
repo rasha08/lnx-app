@@ -1,6 +1,14 @@
 body{
 	background-image: url(https://wallpaperscraft.com/image/dark_spot_background_texture_50611_1920x1080.jpg)
 }
+nav{
+	position: fixed;
+	z-index: 999;
+	top:0px;
+}
+.container{
+	margin-top: 100px;
+}
 .large-brand{
 	font-size: 62px;
 	color: firebrick;
