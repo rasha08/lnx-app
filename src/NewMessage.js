@@ -29,6 +29,7 @@ class NewMessage extends Component {
           <div className="input-field col s9">
             <textarea
               placeholder="Mesto za poruku"
+              value={this.state.message}
               onChange={event => {
                 this.setState({ message: event.target.value });
               }}

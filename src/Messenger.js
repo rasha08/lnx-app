@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { database, auth, googleAuthProvider } from './firebase';
 import map from 'lodash/map';
 import SingleMessage from './SingleMessage';
@@ -69,11 +70,26 @@ class Messenger extends Component {
             LOGOUT
             <i className="material-icons right">person</i>
           </button>
+          <Link to="/recipes">
+            <button className="btn waves-effect waves-light right recipes-btn">
+              RECIPES
+              <i className="material-icons right">queue</i>
+            </button>
+          </Link>
+          <Link to="/">
+            <button className="btn waves-effect waves-light right home-btn">
+              HOME
+              <i className="material-icons right">chat</i>
+            </button>
+          </Link>
         </div>
       );
     } else if (!this.state.messages && this.state.currentUser) {
       return (
         <div className="container col s12">
+          <div className="progress black">
+            <div className="indeterminate red" />
+          </div>
           <NewMessage sendMessage={this.sendMessage} />
           <button className="btn waves-effect waves-light right logout" onClick={this.signout}>
             LOGOUT

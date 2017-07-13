@@ -34,9 +34,29 @@ nav{
 	background-color: rgba(255, 255, 255, 0.6);	
 	margin-bottom: 30px;
 }
-.logout{
+.logout, .recipes-btn, .home-btn{
 	position: fixed;
 	z-index: 999999;
 	top:50px;
 	right: 5px;
+	width: 200px;
+}
+.recipes-btn{
+	top:100px;
+}
+.home-btn{
+	top:150px;
+}
+.ingredients{
+	background-color:rgba(0, 0, 0, 0.6);
+	box-shadow: 2px 3px 10px gray;
+	color: snow; 
+	height: 82vh;
+	overflow-y: scroll;
+}
+.ingredient{
+	background-color:rgba(0, 0, 0, 0.6);
+	box-shadow: inset 1px 1px 10px gray;
+	font-weight: bold;
+	padding: 5%;
 }
